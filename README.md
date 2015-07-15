@@ -1,7 +1,7 @@
 # Library-Oriented Programming
 
-At WWDC, you might’ve learned about [Protocol-Oriented Programming](https://developer.apple.com/videos/wwdc/2015/?id=408), a powerful way of separating concerns using protocols for abstraction.
+Abstraction is a beautiful thing, and easier than ever with Swift. But when we throw _all_ of our abstractions straight into one codebase—our app’s—it’s very easy for them to become tightly coupled.
 
-Abstraction is awesome, and protocols especially! But whenever we throw all of our abstractions into a single codebase, it’s easy for them to become tightly coupled—intentionally or not.
+_Library-oriented programming_ is a solution for this problem. By creating one library per abstraction, we’ll end up with components that are simpler, encapsulated better, and more maintainable.
 
-_Library-oriented programming_ is a great solution to this problem. This talk will explain what “library-oriented” means, and how libraries (and frameworks) help reduce coupling, then offer some design guidelines for building simple, extensible, and nicely-abstracted libraries of your own.
+This talk will explain exactly what “library-oriented” means, how libraries and frameworks reduce coupling, and when the _right time_ is to build a new library. Finally, we’ll cover some specifics for creating all these new projects, from API design, to dependency management, to ensuring that each one succeeds in its own right.
