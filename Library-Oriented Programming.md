@@ -1,9 +1,9 @@
-# [fit] Library-Oriented
+# [fit] **Library-Oriented**
 # Programming
 
 ---
 
-# @jspahrsummers
+# [fit] @jspahrsummers
 
 - ReactiveCocoa
 - Carthage
@@ -14,21 +14,52 @@
 
 ---
 
-# Library-Oriented
+# [fit] Coupling
 
-^ What does it mean
+^ Let's talk about coupling. If two things are _coupled_, they are combined/smashed together in a way that's hard to separate.
+
+---
+
+# [fit] **Coupling**
+# is a kind of
+# [fit] **Complexity**
+
+^ Complexity is the opposite of simplicity. Something simple is as decoupled as possible.
+
+---
+
+# Coupling is harder **across libraries**
+
+^ You can't couple to libraries' implementation details, for example.
+
+---
+
+# Frameworks and libraries
+# [fit] **reduce coupling**
+
+---
+
+# [fit] Library
+# [fit] oriented
+
+^ Creating libraries as frequently as possible.
+
+---
+
+# [fit] **One library**
+# [fit] per abstraction
 
 ---
 
 # Simpler
-# Encapsulated better
-# More maintainable
 
 ---
 
-# Reduce coupling
+# Encapsulated
 
-^ How libraries and frameworks help
+---
+
+# Maintainable
 
 ---
 
@@ -66,7 +97,9 @@
 
 # Ensuring success
 
-^ Case study: RAC during/after v3
+---
+
+# [fit] :zap: ReactiveCocoa 3 :zap:
 
 ---
 
