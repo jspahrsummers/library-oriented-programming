@@ -1,5 +1,7 @@
 # Library-Oriented Programming
 
+_This presentation is meant to be viewed with [Deckset](http://decksetapp.com) theme "Ostrich" in the pink/orange-on-blue color scheme._
+
 Abstraction is a beautiful thing, and easier than ever with Swift. But when we throw _all_ of our abstractions straight into one codebase—our app’s—it’s very easy for them to become tightly coupled.
 
 _Library-oriented programming_ is a solution for this problem. By creating one library per abstraction, we’ll end up with components that are simpler, encapsulated better, and more maintainable.
