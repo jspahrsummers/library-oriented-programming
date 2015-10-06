@@ -243,4 +243,6 @@ build-lists: true
 
 ---
 
-# [fit] **Questions?**
+**Thanks to Simon Whitaker, Nacho Soto, and you!**
+
+# Questions?
