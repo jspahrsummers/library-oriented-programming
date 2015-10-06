@@ -74,6 +74,10 @@
 
 ---
 
+# API design
+
+---
+
 # [fit] Library
 # vs.
 # [fit] Framework
@@ -82,13 +86,28 @@
 
 ---
 
-# API design
+# Don't provide a base class
 
-^ wut
+^ Case study: Mantle (MTLModel)
 
 ---
 
-# Swift???
+# Use protocols
+
+---
+
+# Use access control
+# (in Swift)
+
+^ Public/protected/private
+
+---
+
+# Match conventions
+
+^ Especially Apple's. Make your library look like it belongs.
+
+^ There are exceptions (ReactiveCocoa). Different things should be different.
 
 ---
 
@@ -131,6 +150,12 @@ Cons
 
 ---
 
+# Use it in a real project
+
+^ ASAP
+
+---
+
 # Empower contributors
 
 ---
@@ -144,6 +169,10 @@ Cons
 # Open ecosystem
 
 ^ Encourage people to build _on_ your library instead of _in_ it. Creates a richer ecosystem, reduces maintenance burden.
+
+---
+
+# Get to 1.0!
 
 ---
 
