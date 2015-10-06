@@ -1,14 +1,15 @@
-# [fit] **Library-Oriented**
-# Programming
+# [fit] Library
+# [fit] Oriented
+# **Programming**
 
 ---
 
-# [fit] @jspahrsummers
+## **@jspahrsummers**
 
-- ReactiveCocoa
-- Carthage
-- Mantle
-- libextobjc
+### ReactiveCocoa
+### Carthage
+### Mantle
+### libextobjc
 
 ^ Currently at Facebook, and formerly GitHub, but you may know me better from one of these projects.
 
@@ -73,9 +74,9 @@
 
 ---
 
-# Library
+# [fit] Library
 # vs.
-# Framework
+# [fit] Framework
 
 ^ In the design sense, not the Cocoa/Apple toolchain sense
 
@@ -91,15 +92,64 @@
 
 ---
 
-# Dependency management
+# [fit] Dependency
+# [fit] management
 
 ---
 
-# Ensuring success
+# Git Submodules
+
+Pros
+Cons
+
+---
+
+# CocoaPods
+
+Pros
+Cons
+
+^ Still, always provide an Xcode project!
+
+---
+
+# Carthage
+
+Pros
+Cons
+
+^ I'm biased!
+
+---
+
+# Not mutually exclusive!
+
+---
+
+# Ensuring
+# [fit] success
+
+---
+
+# Empower contributors
+
+---
+
+# Answer questions
+
+^ Whether on Stack Overflow or GitHub Issues, getting a question answered directly by one of the maintainers is awesome.
+
+---
+
+# Open ecosystem
+
+^ Encourage people to build _on_ your library instead of _in_ it. Creates a richer ecosystem, reduces maintenance burden.
 
 ---
 
 # [fit] :zap: ReactiveCocoa 3 :zap:
+
+^ For example
 
 ---
 
