@@ -4,6 +4,10 @@ build-lists: true
 # [fit] Oriented
 # **Programming**
 
+^ Hey, everyone. I'm going to talk today about "library-oriented programming," which is really just an overblown way for me to say "build more libraries!"
+
+^ I've seen a lot of applications that could've been decomposed into libraries, but either the motivation or the knowledge was missing to do it effectively. Hopefully I can provide both of those in this talk.
+
 ---
 
 ## **@jspahrsummers**
@@ -11,16 +15,26 @@ build-lists: true
 ### ReactiveCocoa
 ### Carthage
 ### Mantle
-### libextobjc
 
-^ Currently at Facebook, and formerly GitHub, but you may know me better from one of these projects.
+^ First, just a little bit about me. My name is Justin Spahr-Summers (@jspahrsummers everywhere on the internet).
+
+^ I currently work at Facebook in London, and previously worked at GitHub, but you may know me better from these open source projects that I've contributed to.
+
+---
+
+# [fit] **More** libraries
+# [fit] **Less** coupling
+
+^ The main reason I want to promote "library-oriented programming" is because libraries are essential for decoupling your code. This here might as well have been the title of my talk.
 
 ---
 
 # **What is**
 # [fit] coupling?
 
-^ Let's talk about coupling. If two things are _coupled_, they are combined/smashed together in a way that's hard to separate.
+^ If two classes/components/whatever are _coupled_, they are combined or smashed together in a way that's hard to separate.
+
+^ For example, UIViewController is highly coupled to UIView. It depends on implementation details of views, and it doesn't make sense to talk about view controllers without talking about views as well.
 
 ---
 
@@ -28,14 +42,18 @@ build-lists: true
 # **is a kind of**
 # [fit] complexity
 
-^ Complexity is the opposite of simplicity. Something simple is as decoupled as possible.
+^ Coupling is bad because it's a kind of complexity. This complexity means you can't understand one class without also understanding all the things that it's coupled to. You can't _test_ the class without also, implicitly, testing all those coupled classes.
+
+^ Simpler code is better code, and decoupling is one way to get there.
 
 ---
 
 # [fit] Coupling is easy
 # [fit] **in the same codebase**
 
-^ There's less barrier to depending on something else in the same codebase.
+^ Unfortunately, it's really easy to end up coupling components together when they exist in the same codebase.
+
+^ It starts with a hack here or there ("oh, I just really need to fix this bug, and relying upon this other implementation detail was the easiest way to do it"), until eventually there are hacks upon hacks that prevent you from ever using those components independently again.
 
 ---
 
