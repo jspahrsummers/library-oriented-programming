@@ -12,11 +12,11 @@ build-lists: true
 
 ## **@jspahrsummers**
 
-### ReactiveCocoa
-### Carthage
-### Mantle
+### [ReactiveCocoa][]
+### [Carthage][]
+### [Mantle][]
 
-^ First, just a little bit about me. My name is Justin Spahr-Summers (@jspahrsummers everywhere on the internet).
+^ First, just a little bit about me. My name is Justin Spahr-Summers (@jspahrsummers on Twitter and GitHub).
 
 ^ I currently work at Facebook in London, and previously worked at GitHub, but you may know me better from these open source projects that I've contributed to.
 
@@ -194,7 +194,7 @@ build-lists: true
 
 ---
 
-# CocoaPods
+# [CocoaPods][]
 
 - Widely used
 - “Love it or hate it”
@@ -206,7 +206,7 @@ build-lists: true
 
 ---
 
-# Carthage
+# [Carthage][]
 
 - I helped write it
 - Builds upon standard Xcode projects
@@ -268,3 +268,10 @@ build-lists: true
 **Thanks to Simon Whitaker, Nacho Soto, and you!**
 
 # Questions?
+
+
+
+[Carthage]: https://github.com/Carthage/Carthage
+[CocoaPods]: https://cocoapods.org
+[Mantle]: https://github.com/Mantle/Mantle
+[ReactiveCocoa]: https://github.com/ReactiveCocoa/ReactiveCocoa
