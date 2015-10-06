@@ -60,14 +60,18 @@ build-lists: true
 ## **Libraries introduce**
 # [fit] boundaries
 
-^ It's not impossible, but it is harder to couple your application to the implementation details of a library.
+^ Libraries help here because they more or less _force_ an abstraction boundary on you. What I mean here is that it's _harder_ to couple an application to the implementation details of a library.
+
+^ This is partly because a library has more control over what it exposes. It's also because a library may be updated separately from your application, so you can't depend as strongly on details that may change.
 
 ---
 
 ## **Libraries introduce**
 # [fit] good friction
 
-^ This might seem counter-intuitive, but I think libraries are a good way to force yourself to think more about the abstractions, versioning, etc. It creates a mindset of maintainability.
+^ Basically, I think the additional work that's required for a library is a _good thing_, because it forces you to think more about things like versioning, whether you're using the right abstraction, how you're going to handle backwards compatibility, etc.
+
+^ Libraries help create a _mindset of maintainability_.
 
 ---
 
