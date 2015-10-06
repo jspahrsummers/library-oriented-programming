@@ -193,7 +193,7 @@ build-lists: true
 
 ---
 
-# Not mutually exclusive!
+# Not mutually exclusive
 
 ^ Carthage can manage Git submodules. The presence of an Xcode project (used by Carthage) doesn't prevent CocoaPods from working. You don't even need to provide the podspec in the repo.
 
@@ -206,25 +206,26 @@ build-lists: true
 
 ---
 
-# Use in a real project
+# Use in a **real** project
 
 ^ ASAP. Avoid open sourcing something that you aren't using yourself!
 
 ---
 
-# Empower contributors
+# **Empower** contributors
 
 ^ They're your most important community, because they have a vested interest in the project, and they want to help! They can carry on the project even if you can't spend as much time on it.
 
 ---
 
-# Answer questions
+# **Answer** questions
 
 ^ Whether on Stack Overflow or GitHub Issues, getting a question answered directly by one of the maintainers is awesome.
 
 ---
 
-# Open ecosystem
+# Build outward
+# **(not inward)**
 
 ^ Encourage people to build _on_ your library instead of _in_ it. Creates a richer ecosystem, reduces maintenance burden.
 
