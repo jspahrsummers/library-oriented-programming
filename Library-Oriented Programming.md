@@ -77,7 +77,7 @@ build-lists: true
 
 ---
 
-# Simpler
+# Simple
 
 ^ Fewer concerns = simpler.
 
