@@ -4,23 +4,37 @@ build-lists: true
 # [fit] Oriented
 # **Programming**
 
+^ Hey, everyone. I'm going to talk today about "library-oriented programming," which is really just an overblown way for me to say "build more libraries!"
+
+^ I've seen a lot of applications that could've been decomposed into libraries, but either the motivation or the knowledge was missing to do it effectively. Hopefully I can provide both of those in this talk.
+
 ---
 
 ## **@jspahrsummers**
 
-### ReactiveCocoa
-### Carthage
-### Mantle
-### libextobjc
+### [ReactiveCocoa][]
+### [Carthage][]
+### [Mantle][]
 
-^ Currently at Facebook, and formerly GitHub, but you may know me better from one of these projects.
+^ First, just a little bit about me. My name is Justin Spahr-Summers (@jspahrsummers on Twitter and GitHub).
+
+^ I currently work at Facebook in London, and previously worked at GitHub, but you may know me better from these open source projects that I've contributed to.
+
+---
+
+# [fit] **More** libraries
+# [fit] **Less** coupling
+
+^ The main reason I want to promote "library-oriented programming" is because libraries are essential for decoupling your code. This here might as well have been the title of my talk.
 
 ---
 
 # **What is**
 # [fit] coupling?
 
-^ Let's talk about coupling. If two things are _coupled_, they are combined/smashed together in a way that's hard to separate.
+^ If two classes/components/whatever are _coupled_, they are combined or smashed together in a way that's hard to separate.
+
+^ For example, UIViewController is highly coupled to UIView. It depends on implementation details of views, and it doesn't make sense to talk about view controllers without talking about views as well.
 
 ---
 
@@ -28,33 +42,43 @@ build-lists: true
 # **is a kind of**
 # [fit] complexity
 
-^ Complexity is the opposite of simplicity. Something simple is as decoupled as possible.
+^ Coupling is bad because it's a kind of complexity. This complexity means you can't understand one class without also understanding all the things that it's coupled to. You can't _test_ the class without also, implicitly, testing all those coupled classes.
+
+^ Simpler code is better code, and decoupling is one way to get there.
 
 ---
 
 # [fit] Coupling is easy
 # [fit] **in the same codebase**
 
-^ There's less barrier to depending on something else in the same codebase.
+^ Unfortunately, it's really easy to end up coupling components together when they exist in the same codebase.
+
+^ It starts with a hack here or there ("oh, I just really need to fix this bug, and relying upon this other implementation detail was the easiest way to do it"), until eventually there are hacks upon hacks that prevent you from ever using those components independently again.
 
 ---
 
 ## **Libraries introduce**
 # [fit] boundaries
 
-^ It's not impossible, but it is harder to couple your application to the implementation details of a library.
+^ Libraries help here because they more or less _force_ an abstraction boundary on you. What I mean here is that it's _harder_ to couple an application to the implementation details of a library.
+
+^ This is partly because a library has more control over what it exposes. It's also because a library may be updated separately from your application, so you can't depend as strongly on details that may change.
 
 ---
 
 ## **Libraries introduce**
 # [fit] good friction
 
-^ This might seem counter-intuitive, but I think libraries are a good way to force yourself to think more about the abstractions, versioning, etc. It creates a mindset of maintainability.
+^ Libraries definitely add a bit of friction to your process, but I think the additional work that's required for a library is a _good thing_, because it forces you to think more about things like versioning, whether you're using the right abstraction, how you're going to handle backwards compatibility, etc.
+
+^ In other words, libraries help create a _mindset of maintainability_.
 
 ---
 
 # [fit] **Libraries**
 # [fit] simplify
+
+^ Basically, by separating concerns, libraries simplify your code. Even though there might be more work involved, less coupling occurs.
 
 ---
 
@@ -62,7 +86,9 @@ build-lists: true
 # [fit] **"Library-Oriented"**
 ## Programming?
 
-^ Creating libraries as frequently as possible.
+^ "Library-oriented" means we should all be thinking about libraries as _early_ as possible in the development process, and create as many as we need to enforce a clean separation of concerns.
+
+^ In library-oriented programming, libraries should be a constant consideration, not just an afterthought.
 
 ---
 
@@ -92,6 +118,14 @@ build-lists: true
 # Maintainable
 
 ^ This mostly follows from the previous two points, but it's worth emphasizing that smaller, simpler, and better encapsulated libraries are easier to maintain than monolithic codebases.
+
+---
+
+# [fit] ~~Base~~
+# [fit] ~~Foundation~~
+# [fit] ~~Utils~~
+
+^ Never create libraries like these! They just become dumping grounds for stuff, and all that decoupling you did is a lost cause, because then your "Utils" framework gets coupled too.
 
 ---
 
@@ -160,42 +194,48 @@ build-lists: true
 # [fit] Dependency
 # [fit] **management** :scream:
 
+^ It can be hard to know which dependency managers to support, for users who want to pull in your library.
+
+^ Likewise, if you want to add dependencies to your library itself, there are so many different ways to do it!
+
+^ For example...
+
 ---
 
 # Xcode Workspace & Git Submodules
 
-- Already installed
+- Always available
 - Hard to manage
-- …
+- Duplicates transitive dependencies
+- Doesn’t help with versioning
 
-^ Talk about subtrees too.
+^ Subtrees have many of these same issues, and make updating or pushing changes upstream more complicated (IMO).
 
 ---
 
-# CocoaPods
+# [CocoaPods][]
 
 - Widely used
 - “Love it or hate it”
 - Centrally managed
-- Ignores Xcode project configuration
-- …
-
-^ Still, always provide an Xcode project!
+- Ignores Xcode project
 
 ---
 
-# Carthage
+# [Carthage][]
 
-- I helped write it
-- Builds upon standard Xcode projects
-- Can download prebuilt binaries
-- …
+- It’s great (but I’m biased)
+- Builds on standard Xcode setup
+- Can manage submodules for you
+- Prebuilt binaries
 
 ---
 
 # Not mutually exclusive
 
-^ Carthage can manage Git submodules. The presence of an Xcode project (used by Carthage) doesn't prevent CocoaPods from working. You don't even need to provide the podspec in the repo.
+^ A CocoaPods podspec can live alongside an Xcode project. You don't even need to provide the podspec in the repo!
+
+^ If you're adding dependencies to your library, I'd suggest using the lowest common denominator: Git submodules and Xcode. That still leaves the door open for Carthage and CocoaPods, while supporting users that don't want to use either.
 
 ---
 
@@ -246,3 +286,10 @@ build-lists: true
 **Thanks to Simon Whitaker, Nacho Soto, and you!**
 
 # Questions?
+
+
+
+[Carthage]: https://github.com/Carthage/Carthage
+[CocoaPods]: https://cocoapods.org
+[Mantle]: https://github.com/Mantle/Mantle
+[ReactiveCocoa]: https://github.com/ReactiveCocoa/ReactiveCocoa
