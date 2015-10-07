@@ -194,15 +194,22 @@ build-lists: true
 # [fit] Dependency
 # [fit] **management** :scream:
 
+^ It can be hard to know which dependency managers to support, for users who want to pull in your library.
+
+^ Likewise, if you want to add dependencies to your library itself, there are so many different ways to do it!
+
+^ For example...
+
 ---
 
 # Xcode Workspace & Git Submodules
 
-- Already installed
+- Always available
 - Hard to manage
-- …
+- Duplicates transitive dependencies
+- Doesn’t help with versioning
 
-^ Talk about subtrees too.
+^ Subtrees have many of these same issues, and make updating or pushing changes upstream more complicated (IMO).
 
 ---
 
@@ -211,25 +218,24 @@ build-lists: true
 - Widely used
 - “Love it or hate it”
 - Centrally managed
-- Ignores Xcode project configuration
-- …
-
-^ Still, always provide an Xcode project!
+- Ignores Xcode project
 
 ---
 
 # [Carthage][]
 
-- I helped write it
-- Builds upon standard Xcode projects
-- Can download prebuilt binaries
-- …
+- It’s great (but I’m biased)
+- Builds on standard Xcode setup
+- Can manage submodules for you
+- Prebuilt binaries
 
 ---
 
 # Not mutually exclusive
 
-^ Carthage can manage Git submodules. The presence of an Xcode project (used by Carthage) doesn't prevent CocoaPods from working. You don't even need to provide the podspec in the repo.
+^ A CocoaPods podspec can live alongside an Xcode project. You don't even need to provide the podspec in the repo!
+
+^ If you're adding dependencies to your library, I'd suggest using the lowest common denominator: Git submodules and Xcode. That still leaves the door open for Carthage and CocoaPods, while supporting users that don't want to use either.
 
 ---
 
