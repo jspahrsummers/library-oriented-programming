@@ -121,6 +121,14 @@ build-lists: true
 
 ---
 
+# [fit] ~~Base~~
+# [fit] ~~Foundation~~
+# [fit] ~~Utils~~
+
+^ Never create libraries like these! They just become dumping grounds for stuff, and all that decoupling you did is a lost cause, because then your "Utils" framework gets coupled too.
+
+---
+
 # [fit] Library
 # [fit] **design**
 
