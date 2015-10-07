@@ -69,14 +69,16 @@ build-lists: true
 ## **Libraries introduce**
 # [fit] good friction
 
-^ Basically, I think the additional work that's required for a library is a _good thing_, because it forces you to think more about things like versioning, whether you're using the right abstraction, how you're going to handle backwards compatibility, etc.
+^ Libraries definitely add a bit of friction to your process, but I think the additional work that's required for a library is a _good thing_, because it forces you to think more about things like versioning, whether you're using the right abstraction, how you're going to handle backwards compatibility, etc.
 
-^ Libraries help create a _mindset of maintainability_.
+^ In other words, libraries help create a _mindset of maintainability_.
 
 ---
 
 # [fit] **Libraries**
 # [fit] simplify
+
+^ Basically, by separating concerns, libraries simplify your code. Even though there might be more work involved, less coupling occurs.
 
 ---
 
@@ -84,7 +86,9 @@ build-lists: true
 # [fit] **"Library-Oriented"**
 ## Programming?
 
-^ Creating libraries as frequently as possible.
+^ "Library-oriented" means we should all be thinking about libraries as _early_ as possible in the development process, and create as many as we need to enforce a clean separation of concerns.
+
+^ In library-oriented programming, libraries should be a constant consideration, not just an afterthought.
 
 ---
 
