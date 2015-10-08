@@ -285,8 +285,9 @@ build-lists: true
 
 **Thanks to Simon Whitaker, Nacho Soto, and you!**
 
-# Questions?
+# [fit] Questions?
 
+# [fit] [github.com/jspahrsummers/library-oriented-programming](https://github.com/jspahrsummers/library-oriented-programming)
 
 
 [Carthage]: https://github.com/Carthage/Carthage
