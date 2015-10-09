@@ -152,9 +152,9 @@ build-lists: true
 
 ^ First, figure out whether you're building a library or building a framework.
 
-^ In the design sense, not the Cocoa/Apple toolchain sense.
+^ I don't mean what Apple calls a "library" vs. a "framework", but the terms as they relate to API design. "You call a library, but a framework calls you."
 
-^ "You call a library, but a framework calls you."
+^ Libraries are generally simpler and better-encapsulated. I would say: only build a framework if what you want to do cannot be accomplished with a simple library.
 
 ---
 
