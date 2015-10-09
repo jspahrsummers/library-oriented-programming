@@ -176,15 +176,6 @@ build-lists: true
 
 ---
 
-# [fit] **Use** access control
-# [fit] `public`
-# [fit] `protected`
-# [fit] `private`
-
-^ In Swift, access control keywords can help make public APIs clearer, and hide messy implementation details from consumers.
-
----
-
 # **One**
 # [fit] `final`
 # **word**
