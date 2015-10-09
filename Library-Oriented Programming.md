@@ -107,13 +107,17 @@ build-lists: true
 
 # Simple
 
-^ Fewer concerns = simpler.
+^ A library with fewer concerns is inherently simpler.
+
+^ When you try to solve multiple different problems with the same component, the complexity increases—not just linearly, but exponentially! Solving exactly one problem per library keeps your libraries simpler.
 
 ---
 
 # Encapsulated
 
-^ If you represent exactly one abstraction, you can encapsulate all of its messy details, and only expose the actually abstracted bits to a consumer.
+^ When multiple solutions get combined into one, the result is usually a "leaky abstraction," something that tries to cover all these different use cases, but fails to be generic enough to capture them all completely.
+
+^ On the other hand, if you represent exactly one abstraction, you can encapsulate all of its messy details, and only expose a high-level abstraction to the consumer. The result is less leaky, because the problem being solved is smaller and more focused.
 
 ---
 
