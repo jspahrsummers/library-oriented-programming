@@ -99,7 +99,7 @@ build-lists: true
 # [fit] concept
 # [fit] abstraction
 
-^ Each library should represent exactly one idea/concept/solution/abstraction. If it starts to represent more, split them out!
+^ To really achieve this mindset, each library should represent exactly _one_ idea/concept/solution/abstraction. If it starts to represent more, split them out!
 
 ^ Why?
 
