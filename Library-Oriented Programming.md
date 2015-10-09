@@ -121,20 +121,20 @@ build-lists: true
 
 ---
 
-# [fit] ~~Base~~
-# [fit] ~~Foundation~~
-# [fit] ~~Utils~~
-
-^ Never create libraries like these! They just become dumping grounds for stuff, and all that decoupling you did is a lost cause, because then your "Utils" framework gets coupled too.
-
----
-
 # [fit] **Design**
 # [fit] pitfalls
 
 ^ It's not enough to just split your codebase into libraries and call it a day. Libraries need to be designed well to be successful.
 
 ^ Here are some common pitfalls or problems that I've seen or encountered myself.
+
+---
+
+# [fit] ~~Base~~
+# [fit] ~~Foundation~~
+# [fit] ~~Utils~~
+
+^ Never create libraries like these! They just become dumping grounds for stuff, and all that decoupling you did is a lost cause, because then your "Utils" framework gets coupled too.
 
 ---
 
@@ -161,7 +161,8 @@ build-lists: true
 
 ---
 
-# [fit] **Use** protocols
+# [fit] **~~Inheritance~~**
+# [fit] Protocols
 
 ^ Protocols and composition can replace most needs for inheritance.
 
