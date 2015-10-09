@@ -258,6 +258,8 @@ build-lists: true
 
 ^ They're your most important community, because they have a vested interest in the project, and they want to help! They can carry on the project even if you can't spend as much time on it.
 
+^ This definitely happened with ReactiveCocoa 3. The contributors did so much to push it to a final release, since I had just moved to London and started a new job.
+
 ---
 
 # **Answer** questions
