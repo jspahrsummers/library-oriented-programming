@@ -90,6 +90,8 @@ build-lists: true
 
 ^ In library-oriented programming, libraries should be a constant consideration, not just an afterthought.
 
+^ (Graham Lee might have something to say about this terminology later today!)
+
 ---
 
 # **One**
