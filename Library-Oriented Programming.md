@@ -250,7 +250,9 @@ build-lists: true
 
 # Use in a **real** project
 
-^ ASAP. Avoid open sourcing something that you aren't using yourself!
+^ ASAP. Avoid open sourcing anything that you aren't using yourself!
+
+^ It's way too easy to get lost in the weeds, or lose sight of your library's practicality, if you're not applying it yet.
 
 ---
 
