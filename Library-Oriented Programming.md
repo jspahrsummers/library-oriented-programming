@@ -180,7 +180,7 @@ build-lists: true
 # [fit] `final`
 # **word**
 
-^ Use final anywhere you haven't explicitly committed to supporting inheritance. Otherwise, bugs may result!
+^ In Swift, use final anywhere you haven't explicitly committed to supporting inheritance. This helps prevent the fragile base class problem.
 
 ---
 
