@@ -161,11 +161,9 @@ build-lists: true
 # [fit] **Base classes are**
 # [fit] fragile
 
-^ Case study: Mantle (MTLModel)
+^ I made this mistake in Mantle, with the required MTLModel base class. It sucked whenever we would change the implementation, because that could silently break our users' subclasses (this is the "fragile base class problem").
 
-^ Fragile base class problem
-
-^ Sometimes consumers need to inherit from other things (e.g. NSManagedObject, UIViewController, etc.)
+^ And sometimes consumers need to inherit from other things (e.g., UIViewController is unavoidable). With Mantle, we had users that wanted to inherit from NSManagedObject, and that wasn't really supported until Mantle 2.0, when the base class was no longer required.
 
 ---
 
