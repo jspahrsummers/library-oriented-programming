@@ -172,6 +172,8 @@ build-lists: true
 
 ^ Protocols and composition can replace most needs for inheritance.
 
+^ Composition is less fragile, allows you to reuse the behavior of multiple components, and lets users of the library piece things together as _they_ want to—possibly in ways you never even thought of!
+
 ---
 
 # [fit] **Use** access control
