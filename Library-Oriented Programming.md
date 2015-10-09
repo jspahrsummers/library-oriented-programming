@@ -273,19 +273,21 @@ build-lists: true
 # Build outward
 # **(not inward)**
 
-^ Encourage people to build _on_ your library instead of _in_ it. Creates a richer ecosystem, reduces maintenance burden.
+^ Encourage people to build _on_ your library instead of _in_ it. This helps create a richer ecosystem, while also reducing the maintenance burden.
 
 ---
 
 # Get to 1.0
 
-^ To many people, it's not "real" until it's 1.0.
+^ To many people, an open source project isn't "real" until it's 1.0. It might be arbitrary, but that matters to some!
 
 ---
 
 # [fit] Get to 1.0!
 
 ^ It bears repeating! 1.0 also means that you will be introducing fewer breaking changes. Your users care about that.
+
+^ Besides, planning for 1.0 is a great way to focus your efforts, and cut out anything that isn't absolutely essential to ship.
 
 ---
 
