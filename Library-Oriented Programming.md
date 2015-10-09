@@ -291,11 +291,23 @@ build-lists: true
 
 ---
 
+# [fit] **More** libraries
+# [fit] **Less** coupling
+
+^ But anyways, don't lose sight of the goal.
+
+^ Go forth! Build more libraries, reduce coupling.
+
+---
+
 **Thanks to Simon Whitaker, Nacho Soto, and you!**
 
 # [fit] Questions?
 
 # [fit] [github.com/jspahrsummers/library-oriented-programming](https://github.com/jspahrsummers/library-oriented-programming)
+
+^ Thanks!
+
 
 
 [Carthage]: https://github.com/Carthage/Carthage
