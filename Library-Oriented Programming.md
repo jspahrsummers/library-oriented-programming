@@ -195,7 +195,7 @@ build-lists: true
 
 ^ Especially Apple's. Make your library look like it belongs.
 
-^ There are exceptions (ReactiveCocoa). Different things should be different.
+^ There are exceptions (ReactiveCocoa). If you're doing something outside of the norm, it can make sense to break convention. After all, different things should look different.
 
 ---
 
