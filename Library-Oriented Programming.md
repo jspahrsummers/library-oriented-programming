@@ -255,6 +255,8 @@ build-lists: true
 # [fit] **Open source**
 # [fit] success
 
+![GitHub octocat, fit](Resources/octocat.png)
+
 ^ So you want to release your library as open source. Here are some other things that might be important to its success.
 
 ---
