@@ -210,6 +210,9 @@ build-lists: true
 
 # Workspaces & Git Submodules
 
+![Xcode icon, fit](Resources/xcode-icon.png)
+![Git logo, fit](Resources/git-logo.png)
+
 - Always available
 - Hard to manage
 - Duplicates transitive dependencies
@@ -221,6 +224,8 @@ build-lists: true
 
 # [CocoaPods][]
 
+![CocoaPods logo, fit](Resources/cocoapods-logo.png)
+
 - Widely used
 - “Love it or hate it”
 - Centrally managed
@@ -229,6 +234,8 @@ build-lists: true
 ---
 
 # [Carthage][]
+
+![Carthage logo, fit](Resources/carthage-logo.png)
 
 - It’s great (but I’m biased)
 - Builds on standard Xcode setup
