@@ -303,6 +303,8 @@ build-lists: true
 
 # [fit] Get to 1.0!
 
+![And that's why you always get to 1.0](Resources/thatswhyyoualways.jpg)
+
 ^ It bears repeating! 1.0 also means that you will be introducing fewer breaking changes. Your users care about that.
 
 ^ Besides, planning for 1.0 is a great way to focus your efforts, and cut out anything that isn't absolutely essential to ship.
