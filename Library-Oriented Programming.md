@@ -99,6 +99,8 @@ build-lists: true
 # [fit] concept
 # [fit] abstraction
 
+![Neo is The One](Resources/neo.jpg)
+
 ^ To really achieve this mindset, each library should represent exactly _one_ idea/concept/solution/abstraction. If it starts to represent more, split them out!
 
 ^ Why?
