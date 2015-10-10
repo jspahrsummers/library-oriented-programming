@@ -44,6 +44,8 @@ build-lists: true
 
 ^ Coupling is bad because it's a kind of complexity. This complexity means you can't understand one class without also understanding all the things that it's coupled to. You can't _test_ the class without also, implicitly, testing all those coupled classes.
 
+^ This also makes change harder, because changing one class can have ramifications on anything coupled to it! Say goodbye to safe refactoring.
+
 ^ Simpler code is better code, and decoupling is one way to get there.
 
 ---
@@ -329,7 +331,7 @@ build-lists: true
 
 ---
 
-**Thanks to Simon Whitaker, Nacho Soto, and you!**
+**Thanks to Simon Whitaker, Nacho Soto, Dave Lee, and you!**
 
 # [fit] Questions?
 
