@@ -140,6 +140,8 @@ build-lists: true
 # [fit] **Design**
 # [fit] pitfalls
 
+![Pit in the ground](Resources/pit.jpg)
+
 ^ It's not enough to just split your codebase into libraries and call it a day. Libraries need to be designed well to be successful.
 
 ^ Here are some common pitfalls or problems that I've seen or encountered myself.
