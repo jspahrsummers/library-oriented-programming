@@ -2,7 +2,7 @@ build-lists: true
 
 # [fit] Library
 # [fit] Oriented
-# **Programming**
+# [fit] **Programming**
 
 ^ Hey, everyone. I'm going to talk today about "library-oriented programming," which is really just an overblown way for me to say "build more libraries!"
 
@@ -57,7 +57,7 @@ build-lists: true
 
 ---
 
-## **Libraries introduce**
+## [fit] **Libraries introduce**
 # [fit] boundaries
 
 ^ Libraries help here because they more or less _force_ an abstraction boundary on you. What I mean here is that it's _harder_ to couple an application to the implementation details of a library.
@@ -66,7 +66,7 @@ build-lists: true
 
 ---
 
-## **Libraries introduce**
+## [fit] **Libraries introduce**
 # [fit] good friction
 
 ^ Libraries definitely add a bit of friction to your process, but I think the additional work that's required for a library is a _good thing_, because it forces you to think more about things like versioning, whether you're using the right abstraction, how you're going to handle backwards compatibility, etc.
@@ -113,7 +113,7 @@ build-lists: true
 
 ---
 
-# Encapsulated
+# [fit] Encapsulated
 
 ^ When multiple solutions get combined into one, the result is usually a "leaky abstraction," something that tries to cover all these different use cases, but fails to be generic enough to capture them all completely.
 
@@ -121,7 +121,7 @@ build-lists: true
 
 ---
 
-# Maintainable
+# [fit] Maintainable
 
 ^ This mostly follows from the previous two points, but it's worth emphasizing that smaller, simpler, and better encapsulated libraries are easier to maintain than monolithic codebases.
 
@@ -204,7 +204,7 @@ build-lists: true
 
 ---
 
-# Xcode Workspace & Git Submodules
+# Workspaces & Git Submodules
 
 - Always available
 - Hard to manage
@@ -241,14 +241,15 @@ build-lists: true
 
 ---
 
-# **Open source**
+# [fit] **Open source**
 # [fit] success
 
 ^ So you want to release your library as open source. Here are some other things that might be important to its success.
 
 ---
 
-# Use in a **real** project
+# Use in a
+# [fit] **real** project
 
 ^ ASAP. Avoid open sourcing anything that you aren't using yourself!
 
@@ -256,7 +257,8 @@ build-lists: true
 
 ---
 
-# **Empower** contributors
+# **Empower**
+# [fit] contributors
 
 ^ They're your most important community, because they have a vested interest in the project, and they want to help! They can carry on the project even if you can't spend as much time on it.
 
@@ -270,8 +272,8 @@ build-lists: true
 
 ---
 
-# Build outward
-# **(not inward)**
+# [fit] Build outward
+# [fit] **(not inward)**
 
 ^ Encourage people to build _on_ your library instead of _in_ it. This helps create a richer ecosystem, while also reducing the maintenance burden.
 
