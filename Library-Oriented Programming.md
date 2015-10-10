@@ -248,6 +248,18 @@ build-lists: true
 
 ---
 
+# [fit] Documentation
+# [fit] Documentation
+# [fit] Documentation
+
+![Developers developers developers](Resources/ballmer.jpg)
+
+^ Nobody will be able to use your project without proper documentation!
+
+^ Even on open source projects that I consider to have documented pretty well, this is still the number one request. You can never have enough documentation.
+
+---
+
 # Use in a
 # [fit] **real** project
 
