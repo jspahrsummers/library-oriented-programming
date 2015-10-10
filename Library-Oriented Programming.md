@@ -220,7 +220,9 @@ build-lists: true
 - Duplicates transitive dependencies
 - Doesn’t help with versioning
 
-^ Subtrees have many of these same issues, and make updating or pushing changes upstream more complicated (IMO).
+^ (Bullets)
+
+^ Subtrees have many of these same issues, and can make updating or pushing changes upstream more complicated.
 
 ---
 
@@ -233,6 +235,8 @@ build-lists: true
 - Centrally managed
 - Ignores Xcode project
 
+^ (Bullets)
+
 ---
 
 # [Carthage][]
@@ -243,6 +247,10 @@ build-lists: true
 - Builds on standard Xcode setup
 - Can manage submodules for you
 - Prebuilt binaries
+
+^ (Bullets)
+
+^ Chris suggested I should put "love it or hate it" on this slide too.
 
 ---
 
