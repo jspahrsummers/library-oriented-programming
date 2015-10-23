@@ -1,6 +1,6 @@
 # Library-Oriented Programming
 
-_This presentation is meant to be viewed with [Deckset](http://decksetapp.com) theme "Ostrich" in the pink/orange-on-blue color scheme._
+_[Presented and recorded](https://www.youtube.com/watch?v=lqNUTW0F4bw) at [#pragma mark 2015](http://pragmaconference.com), with [Deckset](http://decksetapp.com) theme "Ostrich" in the pink/orange-on-blue color scheme._
 
 Abstraction is a beautiful thing, and easier than ever with Swift. But when we throw _all_ of our abstractions straight into one codebase—our app’s—it’s very easy for them to become tightly coupled.
 
